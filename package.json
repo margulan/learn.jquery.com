@@ -2,7 +2,7 @@
   "name": "learn.jquery.com",
   "title": "jQuery Learning Site",
   "description": "jQuery Foundation site for learning jQuery and JavaScript",
-  "version": "0.3.25",
+  "version": "0.3.27",
   "homepage": "http://learn.jquery.com",
   "author": {
     "name": "jQuery Foundation (http://jquery.org/)"
@@ -24,8 +24,8 @@
     "grunt": "0.3.17",
     "grunt-clean": "0.3.0",
     "grunt-html": "0.1.1",
-    "grunt-wordpress": "1.0.7",
-    "grunt-jquery-content": "0.12.0",
+    "grunt-wordpress": "1.2.1",
+    "grunt-jquery-content": "0.13.0",
     "grunt-check-modules": "0.1.0",
     "js-yaml": "3.1.0"
   }
