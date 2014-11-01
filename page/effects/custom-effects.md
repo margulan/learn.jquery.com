@@ -1,11 +1,13 @@
 ---
-Başlık   : Özel Efektler ile .animate()
-seviye: Yeni başlayanlar için
-kaynak: http://jqfundamentals.com/legacy
-özellik:
-    - jQuery Temelleri
+title   : Custom Effects with .animate()
+level: beginner
+source: http://jqfundamentals.com/legacy
+attribution:
+    - jQuery Fundamentals
 ---
-jQuery ile istenilen CSS özelliklerinı `.animate()` metotu ile hareketli hale getirilebilir. `.animate()` metodun kullanarak bir efektini hareketli hale getirelim.
+jQuery makes it possible to animate arbitrary CSS properties via the
+`.animate()` method. The `.animate()` method lets you animate to a set
+value, or to a value relative to the current value.
 
 ```
 // Custom effects with .animate()
@@ -19,17 +21,21 @@ $( "div.funtimes" ).animate({
 	}
 );
 ```
-**Not:** Renk özelliklerini `.animate()` metotun kullanrak yapılamaz. Renk özelliklerini 
-[color plugin](http://github.com/jquery/jquery-color) eklentisini kullanarak kolayca gerçekleştilebilir. Renk eklentisi hakkında kitabımızın sonlarına doğru bahsedeceğiz.
 
+**Note:** Color-related properties cannot be animated with `.animate()` using jQuery
+out of the box. Color animations can easily be accomplished by including the
+[color plugin](http://github.com/jquery/jquery-color). We'll discuss using
+plugins later in the book.
 
 ### Easing
 
-Tanım: Easing describes the manner in which an effect occurs — whether
+Definition: Easing describes the manner in which an effect occurs — whether
 the rate of change is steady, or varies over the duration of the animation.
-jQuery easing için sadece iki metot içerir: hareket alanı ve doğrusal alan. Hareket efektileri için daha fazla hareket yaptırmak istiyorsanız "easing plugins" eklentisi mevcuttur.
+jQuery includes only two methods of easing: swing and linear. If you want more
+natural transitions in your animations, various easing plugins are available.
 
-jQuery 1.4 versiyonunda `.animate()` metotun kullanarak easing kullanılabilir.
+As of jQuery 1.4, it is possible to do per-property easing when using the
+`.animate()` method.
 
 ```
 // Per-property easing
@@ -39,5 +45,5 @@ $( "div.funtimes" ).animate({
 }, 300 );
 ```
 
-easing üzerinde daha fazla bilgi için, burasını takip edin
+For more details on easing options, see
 [Animation documentation on api.jquery.com](http://api.jquery.com/animate/).
